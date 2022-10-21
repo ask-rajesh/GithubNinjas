@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,4 +36,12 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.st:hover {
+    color: purple ; 
+    text-decoration: none; 
+    cursor: pointer; 
+    border-bottom:2px solid black;
 }
+    
