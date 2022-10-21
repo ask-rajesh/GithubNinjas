@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import '../App.css'
 
-const Container = styled.div`
+const Container = styled.a`
     display: flex;
     flex-direction: column;
     border-style: solid;
@@ -13,6 +13,9 @@ const Container = styled.div`
     background-color: rgba(50, 115, 220, 0.3);
     background-color: #f1e6f8;
     box-shadow: 0 3px 6px 0 #555;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
     
 `
 
@@ -37,12 +40,6 @@ const Username = styled.div`
     font-family: 'Edu SA Beginner', cursive;
     font-size:20px;
 `
-const GetLink = styled.a`
-    color: black; 
-    text-decoration: none; 
-    cursor: pointer;    
-
-`
 
 
 const UserDetails = (props) =>{
@@ -50,10 +47,10 @@ const UserDetails = (props) =>{
 
     return (
         <>
-            <Container>
+            <Container className="st" href={props.element.html_url} target="_blank" rel="noreferrer">
                 <UserContainer>
                     <CoverImage src={props.element.avatar_url}/>
-                    <Username><b><GetLink className="st"  href={props.element.html_url} target="_blank" rel="noreferrer" >{props.element.login}</GetLink></b></Username>
+                    <Username><b>{props.element.login}</b></Username>
                 </UserContainer>
             </Container>
 

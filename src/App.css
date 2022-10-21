@@ -39,9 +39,8 @@
 } */
 
 .st:hover {
-    color: purple ; 
+    color: red ; 
     text-decoration: none; 
     cursor: pointer; 
-    border-bottom:2px solid black;
 }
     
